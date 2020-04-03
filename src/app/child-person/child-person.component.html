@@ -1,0 +1,15 @@
+<h4>Point 6: Render all details of the selected Person using angular's Input</h4>
+<ul *ngFor = "let p of childPerson; let i = index">
+    <li *ngIf="p.name == childSelectedP.name">
+        Name: {{ p.name }}<br>
+        Mobile: {{ p.mobile }}<br>
+        Age: {{ p.age }}<br>
+        Address: {{ p.address }}<br>
+        City: {{ p.city }}<br>
+        State: {{ p.state }}<br>
+        Zip: {{ p.zip }}<br><hr>        
+        <p><b>Edit Mobile Number:</b></p>
+        Mobile: <input type="text" placeholder="Enter new number" [(ngModel)]='data'>
+        <button type="button" (click)="numberSave(i)">Save</button>
+    </li>
+</ul>

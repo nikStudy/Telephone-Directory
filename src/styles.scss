@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+h4 {
+    text-align: justify;
+    margin: 10px 0 20px 0;
+}
+
+ul{
+    padding: 0;
+    margin: 5px;
+    list-style-type: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 5px;
+}
+
+.grid-item {
+    background-color: lightgray;
+    padding: 10px;
+    border: 1px solid #111;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #111;
+}
+
+ul li a:active {
+    background-color: darkgray;
+    text-decoration: none;
+}
+
+input {
+    font-size: small;
+}
